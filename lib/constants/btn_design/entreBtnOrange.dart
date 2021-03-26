@@ -2,9 +2,10 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:kerek_app/constants/colors/colorStyle.dart';
-import 'package:kerek_app/pages/auth_page_master/input_phone_design.dart';
 
-class EntreBtnDesign extends StatelessWidget {
+class EntreBtnDesignOrange extends StatelessWidget {
+  String text;
+  EntreBtnDesignOrange(this.text);
   @override
   Widget build(BuildContext context) {
     return ButtonTheme(
@@ -14,12 +15,13 @@ class EntreBtnDesign extends StatelessWidget {
       height: 50,
       buttonColor: ColorStyles.brand_orange,
       child: RaisedButton(
+        elevation: 0,
         disabledTextColor: Colors.white,
         textColor: Colors.white,
         onPressed: () => null,
         child: Container(
           child: Text(
-            'Войти',
+            text,
             style: TextStyle(
                 fontSize: 16.0,
                 fontWeight: FontWeight.w700,

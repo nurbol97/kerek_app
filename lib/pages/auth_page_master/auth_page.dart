@@ -14,17 +14,18 @@ class AuthPageMaster extends StatelessWidget {
             decoration: BoxDecoration(
               image: DecorationImage(
                 fit: BoxFit.cover,
-                // colorFilter: ColorFilter.mode(
-                //     Colors.white.withOpacity(0.9), BlendMode.dstATop),
                 image: AssetImage('assets/img/background_auth.png'),
               ),
             ),
-            //padding: EdgeInsets.all(10.0),
             child: ListView(
               children: <Widget>[
                 SizedBox(height: 105),
                 Container(
-                  child: SvgPicture.asset('assets/img/kerek_logo.svg'),
+                  child: SvgPicture.asset(
+                    'assets/img/kerek_logo.svg',
+                    width: 154,
+                    height: 137,
+                  ),
                 ),
                 SizedBox(height: 130),
                 Expanded(

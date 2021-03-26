@@ -1,43 +1,45 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:kerek_app/constants/btn_design/entreBtnMilk.dart';
 import 'package:kerek_app/constants/btn_design/entreBtnOrange.dart';
 import 'package:kerek_app/constants/colors/colorStyle.dart';
 import 'package:kerek_app/constants/textStyle/textStyle.dart';
 
-import 'package:kerek_app/pages/auth_page_master/input_phone_design.dart';
-import 'package:kerek_app/pages/auth_page_master/text_bottom_design.dart';
+import 'package:kerek_app/pages/otp_page/otp_code_text.dart';
+import 'package:kerek_app/pages/otp_page/otp_input_design.dart';
+import 'package:kerek_app/pages/registration_page.dart/avatar_design.dart';
 
-class InputForm extends StatelessWidget {
+class RegistrationForm extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.fromLTRB(16, 64, 16, 64),
+      padding: EdgeInsets.fromLTRB(16, 48, 16, 45),
       child: Column(
         children: <Widget>[
           Text(
-            'Добро пожаловать!',
+            'Регистрация',
             style: TextStyles.head_text_black,
           ),
           SizedBox(
             height: 8,
           ),
           Text(
-            'Войти с помощью номера телефона',
+            'Добавьте свое фото и заполните данные',
             style: TextStyles.subtitle_grey,
+            textAlign: TextAlign.center,
           ),
-          SizedBox(
-            height: 32,
-          ),
-          InputPhoneDesign(),
           SizedBox(
             height: 16,
           ),
-          EntreBtnDesignOrange('Войти'),
+          AvatarDesign(),
           SizedBox(
-            height: 32,
+            height: 16,
           ),
-          EntreBottomTextDesign(),
+          EntreBtnDesignOrange('Сохранить'),
+          SizedBox(
+            height: 8,
+          ),
         ],
       ),
     );
