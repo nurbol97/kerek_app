@@ -28,25 +28,23 @@ class AuthPageMaster extends StatelessWidget {
                   ),
                 ),
                 SizedBox(height: 130),
-                Expanded(
-                  child: Container(
-                    decoration: BoxDecoration(
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.grey.withOpacity(0.5),
-                            spreadRadius: 2,
-                            blurRadius: 4,
-                            offset: Offset(0, 3), // changes position of shadow
-                          ),
-                        ],
-                        color: Colors.white,
-                        borderRadius: BorderRadius.only(
-                          topLeft: Radius.circular(25),
-                          topRight: Radius.circular(25),
-                        )),
-                    child: InputForm(),
-                  ),
-                )
+                Container(
+                  decoration: BoxDecoration(
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey.withOpacity(0.5),
+                          spreadRadius: 2,
+                          blurRadius: 4,
+                          offset: Offset(0, 3), // changes position of shadow
+                        ),
+                      ],
+                      color: Colors.white,
+                      borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(25),
+                        topRight: Radius.circular(25),
+                      )),
+                  child: InputForm(),
+                ),
               ],
             ),
           ),

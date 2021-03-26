@@ -13,6 +13,14 @@ class InputOtpForm extends StatelessWidget {
   String number = '+7 707 707 77 77';
   @override
   Widget build(BuildContext context) {
+    void openRegistrPage() {
+      Navigator.pushNamed(context, '/registr');
+    }
+
+    void openAuthPage() {
+      Navigator.of(context).pop();
+    }
+
     return Padding(
       padding: EdgeInsets.fromLTRB(16, 48, 16, 45),
       child: Column(
@@ -39,11 +47,11 @@ class InputOtpForm extends StatelessWidget {
           SizedBox(
             height: 16,
           ),
-          EntreBtnDesignOrange('Далее'),
+          EntreBtnDesignOrange('Далее', openRegistrPage),
           SizedBox(
             height: 8,
           ),
-          EntreBtnDesignMilk('Назад'),
+          EntreBtnDesignMilk('Назад', openAuthPage),
         ],
       ),
     );

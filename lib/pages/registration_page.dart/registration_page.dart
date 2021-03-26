@@ -18,8 +18,9 @@ class RegistrationPage extends StatelessWidget {
             //padding: EdgeInsets.all(10.0),
             child: ListView(
               children: <Widget>[
-                SizedBox(height: 92),
+                SizedBox(height: 175),
                 Container(
+                  alignment: Alignment.bottomCenter,
                   decoration: BoxDecoration(
                       boxShadow: [
                         BoxShadow(

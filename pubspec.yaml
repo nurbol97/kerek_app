@@ -57,6 +57,7 @@ flutter:
     - assets/img/flags/russia.png
     - assets/img/flags/uzbekistan.png
     - assets/img/ava_pic.png 
+    - assets/img/salut.svg
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
@@ -74,6 +75,10 @@ flutter:
     - family: Roboto
       fonts:
         - asset: assets/fonts/Roboto-Regular.ttf
+    - family: KerekAppIcons
+      fonts:
+        - asset: assets/fonts/KerekAppIcons.ttf
+        
   #   - family: Trajan Pro
   #     fonts:
   #       - asset: fonts/TrajanPro.ttf

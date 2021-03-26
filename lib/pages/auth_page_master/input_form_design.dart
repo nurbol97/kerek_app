@@ -7,10 +7,20 @@ import 'package:kerek_app/constants/textStyle/textStyle.dart';
 
 import 'package:kerek_app/pages/auth_page_master/input_phone_design.dart';
 import 'package:kerek_app/pages/auth_page_master/text_bottom_design.dart';
+import 'package:kerek_app/pages/otp_page/otp_page.dart';
 
 class InputForm extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    void openOtpPage() {
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (BuildContext context) => OtpPage(),
+        ),
+      );
+    }
+
     return Padding(
       padding: EdgeInsets.fromLTRB(16, 64, 16, 64),
       child: Column(
@@ -33,7 +43,10 @@ class InputForm extends StatelessWidget {
           SizedBox(
             height: 16,
           ),
-          EntreBtnDesignOrange('Войти'),
+          EntreBtnDesignOrange(
+            'Войти',
+            openOtpPage,
+          ),
           SizedBox(
             height: 32,
           ),

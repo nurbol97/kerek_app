@@ -39,7 +39,7 @@ class MyApp extends StatelessWidget {
       },
       onUnknownRoute: (RouteSettings settings) {
         return MaterialPageRoute(
-            builder: (BuildContext context) => RegistrationPage());
+            builder: (BuildContext context) => AuthPageMaster());
       },
     );
   }

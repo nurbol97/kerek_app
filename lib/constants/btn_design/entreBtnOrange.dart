@@ -5,7 +5,8 @@ import 'package:kerek_app/constants/colors/colorStyle.dart';
 
 class EntreBtnDesignOrange extends StatelessWidget {
   String text;
-  EntreBtnDesignOrange(this.text);
+  Function function;
+  EntreBtnDesignOrange(this.text, this.function);
   @override
   Widget build(BuildContext context) {
     return ButtonTheme(
@@ -18,7 +19,7 @@ class EntreBtnDesignOrange extends StatelessWidget {
         elevation: 0,
         disabledTextColor: Colors.white,
         textColor: Colors.white,
-        onPressed: () => null,
+        onPressed: function,
         child: Container(
           child: Text(
             text,

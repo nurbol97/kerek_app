@@ -10,8 +10,13 @@ class InputPhoneDesign extends StatelessWidget {
       mask: '+7 (###) ###-##-##', filter: {"#": RegExp(r'[0-9]')});
 
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
+
   @override
   Widget build(BuildContext context) {
+    void openCountriesPage() {
+      Navigator.pushNamed(context, '/countries');
+    }
+
     return Container(
       padding: EdgeInsets.only(top: 2),
       width: 328,
@@ -26,10 +31,13 @@ class InputPhoneDesign extends StatelessWidget {
         inputFormatters: [maskFormatter],
         decoration: InputDecoration(
           contentPadding: EdgeInsets.only(top: 10),
-          prefixIcon: Image.asset(
-            'assets/img/flags/kazakhstan.png',
-            height: 32,
-            width: 32,
+          prefixIcon: GestureDetector(
+            child: Image.asset(
+              'assets/img/flags/kazakhstan.png',
+              height: 32,
+              width: 32,
+            ),
+            onTap: openCountriesPage,
           ),
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(15),
