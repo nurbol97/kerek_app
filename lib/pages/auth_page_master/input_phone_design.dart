@@ -27,7 +27,7 @@ class InputPhoneDesign extends StatelessWidget {
         decoration: InputDecoration(
           contentPadding: EdgeInsets.only(top: 10),
           prefixIcon: Image.asset(
-            'assets/img/flags/flag-kazakhstan.png',
+            'assets/img/flags/kazakhstan.png',
             height: 32,
             width: 32,
           ),
