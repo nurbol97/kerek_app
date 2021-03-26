@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:kerek_app/pages/auth_page_master/auth_page.dart';
 import 'package:kerek_app/pages/countries_page/countries_page.dart';
-import 'package:kerek_app/pages/otp_page/otp_pade.dart';
+import 'package:kerek_app/pages/otp_page/otp_page.dart';
+import 'package:kerek_app/pages/registration_page.dart/registration_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -26,6 +27,7 @@ class MyApp extends StatelessWidget {
         '/auth': (BuildContext context) => AuthPageMaster(),
         '/countries': (BuildContext context) => CountriesPage(),
         '/otp': (BuildContext context) => OtpPage(),
+        '/registr': (BuildContext context) => RegistrationPage(),
       },
 
       onGenerateRoute: (RouteSettings settings) {
@@ -36,7 +38,8 @@ class MyApp extends StatelessWidget {
         return null;
       },
       onUnknownRoute: (RouteSettings settings) {
-        return MaterialPageRoute(builder: (BuildContext context) => OtpPage());
+        return MaterialPageRoute(
+            builder: (BuildContext context) => RegistrationPage());
       },
     );
   }
