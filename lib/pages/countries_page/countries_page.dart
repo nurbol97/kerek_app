@@ -14,7 +14,7 @@ class CountriesPage extends StatelessWidget {
             icon: Icon(Icons.arrow_back_ios, color: ColorStyles.brand_grey),
             onPressed: () => Navigator.of(context).pop(),
           ),
-          titleSpacing: 80,
+          titleSpacing: 60,
           backgroundColor: Colors.white,
           title: Text(
             'Выберите страну',

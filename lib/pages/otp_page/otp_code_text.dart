@@ -28,7 +28,7 @@ class _ResendCodeOtpTextState extends State<ResendCodeOtpText> {
     return Visibility(
       visible: _isVisible,
       child: Padding(
-        padding: const EdgeInsets.only(left: 70),
+        padding: const EdgeInsets.only(left: 50),
         child: Row(
           children: [
             Text('Получить код повторно через', style: defaultStyle),
